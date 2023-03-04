@@ -20,5 +20,10 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: [
+      "parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com",
+    ],
+  },
 };
 export default config;
