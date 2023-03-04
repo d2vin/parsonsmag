@@ -15,7 +15,7 @@ const Carousel = () => {
   ];
   return (
     <div className="mx-auto max-w-md overflow-scroll border-2 border-neutral-500">
-      <div className="carousel round-md mt-8 flex items-center">
+      <div className="carousel rounded-md mt-8 flex items-center">
         {images.map((image) => (
           <Image
             className="carousel-item"
