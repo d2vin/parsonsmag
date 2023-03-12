@@ -14,11 +14,11 @@ const Carousel = () => {
     "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/8.jpg",
   ];
   return (
-    <div className="mx-auto max-w-md overflow-scroll border-2 border-neutral-500">
+    <div className="mx-auto max-w-md overflow-scroll rounded-md border-2 border-transparent shadow-md">
       <div className="carousel rounded-md mt-8 flex items-center">
         {images.map((image) => (
           <Image
-            className="carousel-item"
+            className="carousel-item w-full flex justify-center items-center"
             src={image}
             height={600}
             width={400}
