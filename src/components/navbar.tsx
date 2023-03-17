@@ -7,10 +7,7 @@ const Navbar = () => {
         <h1 className="flex justify-end space-x-4 rounded-lg pt-2 px-2 text-right font-bold text-black hover:cursor-pointer">
           <>PARSONS MAGAZINE</>
         </h1>
-        <div className="flex items-center justify-between pt-2">
-          <h1 className="bg-red-00 ml-1 rounded-sm p-1 py-0 font-bold text-white">
-            PM
-          </h1>
+        <div className="flex items-center justify-end pt-2">
           <div className="mr-2 flex space-x-2 text-black">
             <div className={`h-4 w-4 rounded-full bg-green-400`}></div>
             <div className={`h-4 w-4 rounded-full bg-yellow-400`}></div>
