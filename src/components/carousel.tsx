@@ -1,30 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 
-const Carousel = () => {
-  const images = [
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/0.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/1.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/2.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/3.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/4.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/5.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/6.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/7.jpg",
-    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/8.jpg",
-  ];
+const Carousel = ({ images }: { images: string[] }) => {
   return (
     <div className="mx-auto max-w-md overflow-scroll rounded-md border-2 border-transparent shadow-md">
-      <div className="carousel rounded-md mt-8 flex items-center">
+      <div className="carousel carousel-center mt-8 flex items-center rounded-md">
         {images.map((image) => (
-          <Image
-            className="carousel-item w-full flex justify-center items-center"
-            src={image}
-            height={600}
-            width={400}
-            alt="image"
+          <div
             key={image}
-          />
+            id={image.toString()}
+            className="carousel-item flex w-full items-center justify-center"
+          >
+            <Image
+              src={image}
+              height={600}
+              width={400}
+              alt="image"
+              key={image}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex w-full justify-center gap-2 py-2 font-extralight text-neutral-200">
+        {images.map((image, i) => (
+          <a
+            key={image}
+            href={`#${image}`}
+            className="btn-xs btn"
+          >
+            {i}
+          </a>
         ))}
       </div>
     </div>

@@ -5,6 +5,40 @@ import Navbar from "~/components/navbar";
 import Reggie from "~/components/reggie";
 
 const Home: NextPage = () => {
+  const images = [
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/0.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/1.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/2.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/3.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/4.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/5.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/6.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/7.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/8.jpg",
+  ];
+
+  const zachCooke = [
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/Untitled-3.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/Untitled-2.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/Untitled-4.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/untitled-105.jpg",
+  ];
+
+  const kimaniWorghs = [
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/1+(1).jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/2+(1).jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/3+(1).jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/4+(1).jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/5+(1).jpg",
+  ];
+
+  const tao = [
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/IMG_3024.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/IMG_3026.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/IMG_3035.jpg",
+    "https://parsonsb741d8855a96471f846f18b00684243d170441-dev.s3.us-east-2.amazonaws.com/public/IMG_3037.jpg",
+  ];
+
   return (
     <div className="mx-4">
       <Head>
@@ -18,15 +52,19 @@ const Home: NextPage = () => {
         <div className="space-y-8">
           <div>
             <h1 className="ml-1 text-2xl font-semibold">Zach Cooke</h1>
-            <Carousel />
+            <Carousel images={zachCooke} />
           </div>
           <div>
             <h1 className="ml-1 text-2xl font-semibold">Nico Daniels</h1>
-            <Carousel />
+            <Carousel images={images} />
           </div>
           <div>
             <h1 className="ml-1 text-2xl font-semibold">Kimani Worghs</h1>
-            <Carousel />
+            <Carousel images={kimaniWorghs} />
+          </div>
+          <div>
+            <h1 className="ml-1 text-2xl font-semibold">Concert</h1>
+            <Carousel images={tao} />
           </div>
           <div>
             <Reggie />
