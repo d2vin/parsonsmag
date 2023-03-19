@@ -4,7 +4,7 @@ import Image from "next/image";
 const Carousel = ({ images }: { images: string[] }) => {
   return (
     <div className="mx-auto max-w-md overflow-scroll rounded-md border-2 border-transparent shadow-md">
-      <div className="carousel carousel-center mt-8 flex items-center rounded-md">
+      <div className="carousel carousel-center flex items-center rounded-md">
         {images.map((image) => (
           <div
             key={image}
