@@ -52,25 +52,21 @@ const Home: NextPage = () => {
         <div className="sticky top-0 z-10 h-[48px] bg-white" />
         <section className="snap-center">
           <div className="mx-auto my-24 max-w-md">
-            <h1 className="ml-1 text-2xl font-semibold">Zach Cooke</h1>
             <Carousel images={zachCooke} />
           </div>
         </section>
         <section className="snap-center">
           <div className="mx-auto my-28 max-w-md">
-            <h1 className="ml-1 text-2xl font-semibold">Nico Daniels</h1>
             <Carousel images={images} />
           </div>
         </section>
         <section className="snap-center">
           <div className="mx-auto my-28 max-w-md">
-            <h1 className="ml-1 text-2xl font-semibold">Kimani Worghs</h1>
             <Carousel images={kimaniWorghs} />
           </div>
         </section>
         <section className="snap-center">
           <div className="mx-auto my-28 max-w-md">
-            <h1 className="ml-1 text-2xl font-semibold">Concert</h1>
             <Carousel images={tao} />
           </div>
         </section>
