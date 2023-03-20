@@ -13,7 +13,7 @@ const Carousel = ({ images }: { images: string[] }) => {
           >
             <Image
               src={image}
-              height={600}
+              height={200}
               width={400}
               alt="image"
               key={image}
