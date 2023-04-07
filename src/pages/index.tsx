@@ -2,7 +2,6 @@ import { type NextPage } from "next";
 import Carousel from "~/components/carousel";
 import Head from "next/head";
 import Navbar from "~/components/navbar";
-import Reggie from "~/components/reggie";
 import Layout from "~/components/layout";
 
 const Home: NextPage = () => {
@@ -49,7 +48,7 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Navbar />
-        <div className="sticky top-0 z-10 h-[48px] bg-white" />
+        <div className="sticky top-0 z-10 h-[48px] bg-white dark:bg-neutral-900" />
         <section className="snap-center">
           <div className="mx-auto my-24 max-w-md">
             <Carousel images={zachCooke} />

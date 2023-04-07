@@ -6,7 +6,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="z-0 mx-4 xs:mx-auto h-screen snap-y snap-mandatory overflow-scroll no-scrollbar">
+    <div className="dark:bg-neutral-900 z-0 mx-4 xs:mx-auto h-screen snap-y snap-mandatory overflow-scroll no-scrollbar">
       {children}
     </div>
   );
