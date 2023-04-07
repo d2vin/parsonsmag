@@ -70,11 +70,6 @@ const Home: NextPage = () => {
             <Carousel images={tao} />
           </div>
         </section>
-        <section className="snap-center">
-          <div className="mx-auto my-28 max-w-md">
-            <Reggie />
-          </div>
-        </section>
       </Layout>
     </>
   );
