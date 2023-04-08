@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
-const Carousel = ({ images }: { images: string[] }) => {
+const Carousel = ({ images, name }: { images: string[]; name: string; }) => {
   return (
     <div className="no-scrollbar mx-auto max-w-md overflow-scroll rounded-md border-2 border-transparent shadow-inner border-neutral-200">
       <div className="carousel flex items-center rounded-md pt-4">
+        <div className="carousel-item w-full flex justify-center">{name}</div>
         {images.map((image) => (
           <div
             key={image}
             id={image.toString()}
-            className="carousel-item relative flex h-[50vh] w-full items-center justify-center"
+            className="carousel-item relative flex h-[50vh] w-full rounded-t-sm items-center justify-center bg-white"
           >
             <Image
               src={image}
