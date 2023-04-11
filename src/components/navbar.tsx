@@ -13,10 +13,10 @@ const Navbar = () => {
           <div className="mr-2 flex space-x-2 text-black">
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className={`h-4 w-4 rounded-full bg-green-400`}
+              className={`h-4 w-4 rounded-full bg-green-500`}
             ></button>
-            <div className={`h-4 w-4 rounded-full bg-yellow-400`}></div>
-            <div className={`h-4 w-4 rounded-full bg-red-400`}></div>
+            <div className={`h-4 w-4 rounded-full bg-yellow-500`}></div>
+            <div className={`h-4 w-4 rounded-full bg-red-500`}></div>
           </div>
         </div>
       </div>
