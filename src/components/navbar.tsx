@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -15,7 +16,10 @@ const Navbar = () => {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className={`h-4 w-4 rounded-full bg-green-500`}
             ></button>
-            <div className={`h-4 w-4 rounded-full bg-yellow-500`}></div>
+            <Link
+              href="/book"
+              className={`h-4 w-4 rounded-full bg-yellow-500`}
+            ></Link>
             <div className={`h-4 w-4 rounded-full bg-red-500`}></div>
           </div>
         </div>
