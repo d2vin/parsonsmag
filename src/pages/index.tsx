@@ -69,6 +69,12 @@ const Home: NextPage = () => {
             <Carousel images={pixelMouth} name={"PixelMouth"} />
           </div>
         </section>
+        <section className="snap-center">
+          <div className="mx-auto my-28 max-w-md">
+            <h1 className="text-white">hi hello
+        </h1>
+          </div>
+        </section>
       </Layout>
     </>
   );
