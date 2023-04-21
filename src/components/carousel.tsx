@@ -12,7 +12,7 @@ const Carousel = ({ images, name }: { images: string[]; name: string }) => {
           <div
             key={image}
             id={image.toString()}
-            className="carousel-item relative flex h-[50vh] w-full items-center justify-center rounded-t-md bg-white"
+            className="carousel-item relative flex h-[50vh] w-full items-center justify-center bg-white"
           >
             <Image
               src={image}
@@ -24,12 +24,12 @@ const Carousel = ({ images, name }: { images: string[]; name: string }) => {
           </div>
         ))}
       </div>
-      <div className="shadow-b-inner flex w-full justify-center gap-2 rounded-b-md pb-2 font-extralight text-neutral-200">
+      <div className="shadow-b-inner flex w-full justify-center gap-2 rounded-b-md pt-8 font-extralight text-neutral-200">
         {images.map((image, i) => (
           <a
             key={image}
             href={`#${image}`}
-            className="btn-xs btn font-medium text-neutral-400 shadow-inner hover:opacity-50 hover:shadow-none"
+            className="btn-xs border-neutral-400 btn font-medium text-neutral-400 shadow-inner hover:border-b-2 hover:opacity-50 hover:shadow-none"
           >
             {i}
           </a>
