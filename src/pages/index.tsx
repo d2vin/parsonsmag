@@ -71,8 +71,7 @@ const Home: NextPage = () => {
         </section>
         <section className="snap-center">
           <div className="mx-auto my-28 max-w-md">
-            <h1 className="text-white">hi hello
-        </h1>
+            <h1 className="text-white">hi hello</h1>
           </div>
         </section>
       </Layout>
