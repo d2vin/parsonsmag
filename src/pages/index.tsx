@@ -47,14 +47,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="grid grid-cols-1 xl:grid-cols-4">
-        <div className="col-span-2 hidden flex-1 pl-6 pr-2 xl:block">
+        {/* Potential submission portal */}
+        {/* <div className="col-span-2 hidden flex-1 pl-6 pr-2 xl:block">
           <form className="mx-auto my-20 flex max-w-2xl flex-col space-y-2 rounded-lg bg-white bg-opacity-10 py-4 px-2">
             <h1 className="ml-2 font-semibold">Submission portal</h1>
             <input type="text" placeholder="name" className="px-2 py-2 ml-2 rounded-md" />
             <input type="text" placeholder="email" className="px-2 py-2 ml-2 rounded-md" />
             <input type="file" className="px-2 py-2" />
           </form>
-        </div>
+        </div> */}
         <div className="xs:mx-auto no-scrollbar z-0 col-span-2 mx-4 h-screen snap-y snap-mandatory overflow-scroll dark:bg-neutral-900 bg-white">
           <Navbar />
           <div className="sticky top-0 z-10 h-[48px] w-full dark:bg-neutral-900 bg-white" />
