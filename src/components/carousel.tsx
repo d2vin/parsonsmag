@@ -3,10 +3,12 @@ import Image from "next/image";
 
 const Carousel = ({ images, name }: { images: string[]; name: string }) => {
   return (
-    <div className="no-scrollbar mx-auto max-w-md overflow-scroll rounded-md border-2 dark:border-neutral-900 shadow-sm dark:bg-neutral-900">
+    <div className="no-scrollbar mx-auto max-w-md overflow-scroll rounded-md shadow-lg">
       <div className="no-scrollbar carousel flex items-center rounded-t-md pt-4">
-        <div className="carousel-item flex h-[50vh] w-full items-center justify-center bg-white text-black">
-          {name}
+        <div className="carousel-item text-center flex h-[50vh] w-full items-center justify-center bg-white dark:bg-neutral-900 dark:text-white text-black">
+          {name} ➡️
+          <br/>
+          Click and use the arrow keys
         </div>
         {images.map((image) => (
           <div
@@ -24,7 +26,7 @@ const Carousel = ({ images, name }: { images: string[]; name: string }) => {
           </div>
         ))}
       </div>
-      <div className="shadow-b-inner no-scrollbar flex w-full justify-center gap-2 overflow-x-scroll rounded-b-md py-2 font-extralight">
+      {/* <div className="shadow-b-inner no-scrollbar flex w-full justify-center gap-2 overflow-x-scroll rounded-b-md py-2 font-extralight">
         {images.map((image, i) => (
           <a
             key={image}
@@ -34,7 +36,7 @@ const Carousel = ({ images, name }: { images: string[]; name: string }) => {
             {i}
           </a>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
