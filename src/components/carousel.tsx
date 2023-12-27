@@ -5,10 +5,10 @@ const Carousel = ({ images, name }: { images: string[]; name: string }) => {
   return (
     <div className="no-scrollbar mx-auto max-w-md overflow-scroll rounded-md shadow-lg">
       <div className="no-scrollbar carousel flex items-center rounded-t-md pt-4">
-        <div className="carousel-item text-center flex h-[50vh] w-full items-center justify-center bg-white dark:bg-neutral-900 dark:text-white text-black">
+        <div className="carousel-item flex h-[50vh] w-full items-center justify-center bg-white text-center text-black dark:bg-neutral-900 dark:text-white">
           {name} ➡️
-          <br/>
-          Click and use the arrow keys
+          <br />
+          Click and use the arrow keys or swipe 📲
         </div>
         {images.map((image) => (
           <div
